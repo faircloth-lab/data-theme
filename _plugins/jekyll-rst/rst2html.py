@@ -1,4 +1,4 @@
-#!/usr/local/bin/python2.7
+#!/usr/bin/env python
 
 # :Author: David Goodger, the Pygments team, Guenter Milde
 # :Date: $Date: $
