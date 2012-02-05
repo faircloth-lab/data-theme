@@ -1,0 +1,26 @@
+---
+layout: home
+title: posts by tag
+---
+
+<nav>
+	{% for category in site.categories %}
+	  <a href={{ category | first }}>{{ category | first }}</a>
+	    <ul class = "posts">
+		    {% for posts in category %}
+		            {% for post in posts %}
+		                    {% if post.title %}
+		                        <li class="article-link">
+								<a href="{{ site.baseurl }}{{ post.url }}" class="h3">{{ post.title }}</a>
+								<small>
+									<date>{{ post.date | date_to_string }}</date>
+								</small>
+								</li>
+		                    {% endif %}
+		            {% endfor %}
+			<br />
+		    {% endfor %}
+	    </ul>
+	{% endfor %}
+</ul>
+</nav>

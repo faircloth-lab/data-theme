@@ -1,0 +1,35 @@
+url: http://faircloth-lab.org
+baseurl: /data
+sitename: faircloth-lab
+tagline: data
+
+# site setup
+permalink:   /:year/:month/:day/:title.html
+category_dir: categories
+category_title_prefix: ''
+
+# markup
+pygments:    true
+markdown:    maruku
+
+# search/site params
+ga: UA-XXXXX-X              #Google Analytics ID
+sitemap: GOOGLEWEBMASTER    #Google webmaster verification code
+
+# set default author
+author: group
+
+#exclude these files always
+exclude: LICENSE, README.markdown, Rakefile, errata.rst
+
+# authors
+
+authors:
+  brant:
+    display_name: brant faircloth
+    email: brant@faircloth-lab.org
+    web: http://faircloth-lab.org/
+    twitter: brantfaircloth
+    github: brantfaircloth
+
+

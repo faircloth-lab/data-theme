@@ -1,0 +1,21 @@
+---
+layout: home
+title: Category
+---
+<header>
+<div class="head-inner">
+	<h4>{{ page.title }}</h4>
+</div>
+</header>
+<nav>
+    <ul class = "posts">
+	    {% for post in site.categories[page.category] %}
+        	<li class="article-link">
+				<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="h3">{{ post.title }}</a>
+				<small>
+					<date>{{ post.date | date_to_string }}</date>
+				</small>
+			</li>
+	    {% endfor %}
+	</ul>
+</nav>
