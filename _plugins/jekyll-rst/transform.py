@@ -1,5 +1,3 @@
-#!/usr/local/bin/python2.7
-
 import sys
 from docutils.core import publish_parts
 from optparse import OptionParser
